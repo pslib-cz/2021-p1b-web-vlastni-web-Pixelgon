@@ -1,0 +1,9 @@
+@font-face {
+    font-family: Azonix;
+    src: url(../fonts/Azonix.otf);
+    font-weight: normal;
+}
+
+html {
+    font-family: "San F", sans-serif, "Roboto Light";
+}
