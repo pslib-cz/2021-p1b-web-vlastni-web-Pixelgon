@@ -116,7 +116,7 @@ section {
     color: white;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
     color: var(--gaminggreen);
 }
 
@@ -155,11 +155,6 @@ figure.picture img {
     display: block;
     max-width: 99.4%;
     border: var(--borderimg);
-}
-figure figcaption {
-    font-size: .8rem;
-    background-color: var(--blue);
-    padding: 10px 20px;
 }
 
 .heading-wrapper {
