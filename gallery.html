@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PCGAMER | GALERIE</title>
+    <link rel="shortcut icon" href="./static/imgs/Favicon.ico" type="image/x-icon"><title>PCGAMER | GALERIE</title>
     <link rel="stylesheet" href="static/css/styles.css">
     <link rel="stylesheet" href="static/css/typography.css">
     <link rel="stylesheet" href="static/css/normalize.css">
+    <link rel="stylesheet" href="/static/css/lightbox.css">
+    <script src="https://kit.fontawesome.com/fff756c337.js" crossorigin="anonymous"></script>
 </head>
 <header>
     <div class="header">
@@ -19,10 +21,53 @@
     </div>
 </header>
 <body>
+<div class="gallery-wrapper">
+    <h1>Galerie:</h1>
+    <div class="portfolio-list">
+        <div class="portfolio-item">
+            <div><a href="static/imgs/galerie/icons/bio.jpg" data-lightbox="photos"><img class="portfolio-img img-portfolio portfolio-item" src="static/imgs/galerie/full/bio.jpg" alt="Bioshock"></a></div>
+        </div>
+        <div class="portfolio-item">
+            <div><a href="static/imgs/galerie/icons/w3.jpg" data-lightbox="photos"><img class="portfolio-img img-portfolio portfolio-item" src="static/imgs/galerie/full/w3.jpg" alt="Witcher 3"></a></div>
+        </div>
+        <div class="portfolio-item">
+            <div><a href="static/imgs/galerie/icons/cb2077.jpg" data-lightbox="photos"><img class="portfolio-img img-portfolio portfolio-item" src="static/imgs/galerie/full/cb2077.jpg" alt="Cyberpunk 2077"></a></div>
+        </div>
+        <div class="portfolio-item">
+            <div><a href="static/imgs/galerie/icons/doom.jpg" data-lightbox="photos"><img class="portfolio-img img-portfolio portfolio-item" src="static/imgs/galerie/full/doom.jpg" alt="Doom 2016"></a></div>
+        </div>
+        <div class="portfolio-item">
+            <div><a href="static/imgs/galerie/icons/ds.jpg" data-lightbox="photos"><img class="portfolio-img img-portfolio portfolio-item" src="static/imgs/galerie/full/ds.jpg" alt="Death Stranding"></a></div>
+        </div>
+        <div class="portfolio-item">
+            <div><a href="static/imgs/galerie/icons/hl2.jpg" data-lightbox="photos"><img class="portfolio-img img-portfolio portfolio-item" src="static/imgs/galerie/full/hl2.jpg" alt="Half Life 2"></a></div>
+        </div>
+        <div class="portfolio-item">
+            <div><a href="static/imgs/galerie/icons/kcd.jpg" data-lightbox="photos"><img class="portfolio-img img-portfolio portfolio-item" src="static/imgs/galerie/full/kcd.jpg" alt="Kingdome Come: Delivarence"></a></div>
+        </div>
+        <div class="portfolio-item">
+            <div><a href="static/imgs/galerie/icons/me.jpg" data-lightbox="photos"><img class="portfolio-img img-portfolio portfolio-item" src="static/imgs/galerie/full/me.jpg" alt="Metro Exodus"></a></div>
+        </div>
+        <div class="portfolio-item">
+            <div><a href="static/imgs/galerie/icons/msc2020.jpg" data-lightbox="photos"><img class="portfolio-img img-portfolio portfolio-item" src="static/imgs/galerie/full/msc2020.jpg" alt="Witcher 3"></a></div>
+        </div>
+        <div class="portfolio-item">
+            <div><a href="static/imgs/galerie/icons/p.jpg" data-lightbox="photos"><img class="portfolio-img img-portfolio portfolio-item" src="static/imgs/galerie/full/p.jpg" alt="Prey"></a></div>
+        </div>
+        <div class="portfolio-item">
+            <div><a href="static/imgs/galerie/icons/portal.jpg" data-lightbox="photos"><img class="portfolio-img img-portfolio portfolio-item" src="static/imgs/galerie/full/portal.jpg" alt="Portal"></a></div>
+        </div>
+        <div class="portfolio-item">
+            <div><a href="static/imgs/galerie/icons/rdr2.jpg" data-lightbox="photos"><img class="portfolio-img img-portfolio portfolio-item" src="static/imgs/galerie/full/rdr2.jpg" alt="Red Dead Redemption 2"></a></div>
+        </div>
+    </div>
+</div>
 <footer>
     <p>
         COPYRIGHT © 2022 | PCGAMER | VYTVOŘIL <a href="https://www.pixelgon.cz/">PIXELGON</a>
     <p>
 </footer>
 </body>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/lightbox.js"></script>
 </html>

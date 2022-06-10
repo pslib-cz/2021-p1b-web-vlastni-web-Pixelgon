@@ -121,7 +121,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .parallax {
-    background-image: url('../imgs/header.jpg');
+    background-image: url('../imgs/home/header.jpg');
     height: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -137,12 +137,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .parallax_title {
     font-family: "Azonix", sans serif;
-    font-size: 5rem;
+    font-size: 3.5rem;
     color: var(--gaminggreen);
     background-color: rgba(75, 75, 75, 0.47);
     backdrop-filter: blur(7px);
     border-radius: 15px;
     border: var(--borderimg);
+    text-align: center;
+    padding: 5px;
 }
 
 figure.picture {
@@ -179,6 +181,81 @@ li a:hover {
     color: var(--gaminggreen);
 }
 
-strong {
+li a:after {
+    content: " \2192";
+    color: var(--gaminggreen);
+}
+
+footer p a:after {
+    content: " \2192";
     color: var(--blue);
+}
+
+strong {
+    color: var(--gaminggreen);
+}
+
+.portfolio-item {
+    transition: 0.2s;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.005);
+    filter: blur(2px);
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    height: 40vh;
+    flex-grow: 1;
+}
+
+.portfolio-list:last-child {
+    flex-grow: 10;
+}
+
+.portfolio-img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .portfolio-item {
+        height: 30vh;
+    }
+}
+
+@media (max-height: 480px) {
+    .portfolio-item {
+        height: 80vh;
+    }
+}
+
+
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+    .portfolio-list {
+        flex-direction: row;
+    }
+
+    .portfolio-item {
+        height: auto;
+        width: 100%;
+    }
+    .portfolio-img {
+        width: 100%;
+        max-height: 75vh;
+        min-width: 0;
+    }
+}
+
+.gallery-wrapper {
+    max-width: 90%;
+    padding: 10px;
+    margin: 0 auto;
 }
